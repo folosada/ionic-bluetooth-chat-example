@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title center>
+      Bluetooth Chat
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding id="bluetooth-page">
+  <div id="bluetooth-container">
+    <form id="bluetooth-form">
+      <button id="search-device-button" (click)="buscarDispositivos()" ion-button color="positive" block large icon-right style="text-align:left;">
+        Buscar dispositivos
+        <ion-icon name="search"></ion-icon>
+      </button> 
+      <ion-item>        
+        <ion-label>
+          Selecione o dispositivo
+        </ion-label>
+        <ion-select name="select-device" [(ngModel)]="device">
+          <ion-option *ngFor="let device of devices" [value]="device">{{device.name}}</ion-option>
+        </ion-select>
+      </ion-item>
+      <button id="connect-button" (click)="iniciar()" ion-button color="positive" block large icon-right style="text-align:left;">
+        Iniciar!
+        <ion-icon name="play_circle_filled"></ion-icon>
+      </button>
+      <button id="connect-button" (click)="acessar()" ion-button color="positive" block large icon-right style="text-align:left;">
+        Acessar conectado        
+      </button>   
+    </form>
+  </div>
+</ion-content>

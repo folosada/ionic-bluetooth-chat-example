@@ -1,0 +1,36 @@
+.textarea-div {    
+    border-color: black;    
+    border-left: 2px;
+    border-top: 2px;
+    border-right: 2px;
+    border-bottom: 2px;
+    border-left-color: black;
+    border-top-color: black;
+    border-right-color: black;
+    border-bottom-color: black;   
+    width: 100%;
+    height: 90%; 
+}
+
+#textarea {
+    width: 100%;
+    height: 100%;
+    border-color: black;    
+    border: 2px;
+    border-width: 2px;
+}
+
+.button {    
+    width: 100%;
+    display: inline-flex;
+}
+
+#send-message {
+    width: 15%;
+    float: right;
+}
+
+#input-message {
+    width: 80%;
+    float: left;
+}
